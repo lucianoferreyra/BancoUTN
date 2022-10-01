@@ -13,19 +13,28 @@
         android:layout_height="wrap_content"
         android:text="Pantalla simular" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_below="@+id/textView"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_launcher_foreground" />
-
-    <TextView
-        android:id="@+id/bancoUTNSantaFe"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView"
-        android:text="Banco UTN SantaFe" />
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            app:srcCompat="@drawable/ic_launcher_foreground" />
+
+        <TextView
+            android:id="@+id/bancoUTNSantaFe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imageView"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Banco UTN Santa Fe"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/tasaNominalAnual"
@@ -44,7 +53,6 @@
         android:inputType="number"
         android:gravity="right"
         android:text="69.5"
-        android:layout_alignParent="true"
         />
 
     <TextView

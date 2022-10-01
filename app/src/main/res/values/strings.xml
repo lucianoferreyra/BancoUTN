@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">BancoUTN</string>
+    <string-array name="moneda_array">
+        <item>PESOS</item>
+        <item>DOLARES</item>
+    </string-array>
 </resources>

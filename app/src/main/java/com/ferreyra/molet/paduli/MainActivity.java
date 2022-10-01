@@ -1,14 +1,20 @@
 package com.ferreyra.molet.paduli;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import com.ferreyra.molet.paduli.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
-    Button simular;
+    private Button simular;
+
+    private ActivityMainBinding binding;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +31,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        View view = binding.getRoot();
+        setContentView(view);
+
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+                R.array.moneda_array,
+                android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        binding.spinnerMoneda.setAdapter(adapter);
 
     }
 }
