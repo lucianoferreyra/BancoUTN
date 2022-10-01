@@ -11,12 +11,14 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Pantalla simular" />
+        android:text="Pantalla simular"
+        android:textAlignment="center"
+        />
+
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
-        android:layout_below="@+id/textView"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/ic_launcher_foreground" />
 
@@ -24,8 +26,9 @@
         android:id="@+id/bancoUTNSantaFe"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView"
-        android:text="Banco UTN SantaFe" />
+        android:text="Banco UTN SantaFe"
+        android:minHeight="48dp"
+        />
 
     <TextView
         android:id="@+id/tasaNominalAnual"
@@ -37,14 +40,14 @@
 
     <EditText
         android:id="@+id/editTextTasaNominalAnual"
+        android:
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:autoSizeTextType="uniform"
         android:ems="10"
         android:inputType="number"
-        android:gravity="right"
         android:text="69.5"
-        android:layout_alignParent="true"
+        android:minHeight="48dp"
         />
 
     <TextView
@@ -80,6 +83,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="30 dias"
+        android:max="12"
+        />
+    <TextView
+        android:id="@+id/datoSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="30 dias"
         />
 
     <CheckBox
@@ -87,6 +97,70 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Con renovacion automatica" />
+
+    <TextView
+        android:id="@+id/titleSimulador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simulador Plazo Fijo en Pesos"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:id="@+id/plazoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Plazo:" />
+    <TextView
+        android:id="@+id/plazoDato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:text="info" />
+    <TextView
+        android:id="@+id/capitalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capital:" />
+    <TextView
+        android:id="@+id/capitalDato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text="111" />
+    <TextView
+        android:id="@+id/interesesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intereses ganados:$" />
+    <TextView
+        android:id="@+id/interesesDatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text="100" />
+    <TextView
+        android:id="@+id/montoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monto total:$" />
+    <TextView
+        android:id="@+id/montoDatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text="1000" />
+    <TextView
+        android:id="@+id/montoAnualText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monto total anual:$" />
+    <TextView
+        android:id="@+id/montoAnualDatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text="1000" />
+
 
     <Button
         android:id="@+id/confirmarButton"
