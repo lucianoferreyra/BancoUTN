@@ -13,5 +13,86 @@
         android:layout_height="wrap_content"
         android:text="Pantalla simular" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/bancoUTNSantaFe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:text="Banco UTN SantaFe" />
+
+    <TextView
+        android:id="@+id/tasaNominalAnual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tasa Nominal Anual"
+
+        />
+
+    <EditText
+        android:id="@+id/editTextTasaNominalAnual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoSizeTextType="uniform"
+        android:ems="10"
+        android:inputType="number"
+        android:gravity="right"
+        android:text="69.5"
+        android:layout_alignParent="true"
+        />
+
+    <TextView
+        android:id="@+id/tasaEfectivaAnual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tasa Efectiva Anual" />
+
+    <EditText
+        android:id="@+id/editTextTasaEfectivaAnual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text="96.33" />
+
+    <TextView
+        android:id="@+id/capital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capital a Invertir ($)" />
+
+    <EditText
+        android:id="@+id/editTextCapital"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text="10000" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="30 dias"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Con renovacion automatica" />
+
+    <Button
+        android:id="@+id/confirmarButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirmar" />
+
 
 </LinearLayout>
