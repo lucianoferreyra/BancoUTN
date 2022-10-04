@@ -12,14 +12,19 @@ import com.ferreyra.molet.paduli.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
     private Button simular;
-
     private ActivityMainBinding binding;
-
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        View view = binding.getRoot();
+        setContentView(view);
+
+
 
         simular = (Button)findViewById(R.id.botonSimular);
 
@@ -31,9 +36,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
-        View view = binding.getRoot();
-        setContentView(view);
+
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.moneda_array,
