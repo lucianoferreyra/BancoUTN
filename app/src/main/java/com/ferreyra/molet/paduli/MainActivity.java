@@ -37,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
                 android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         binding.spinnerMoneda.setAdapter(adapter);
+
+        binding.botonConstituir.setEnabled(false); //Se debe agregar lógica para habilitarlo cuando llegan datos de la pantalla simular
     }
 
     private TextWatcher textWatcher = new TextWatcher() {
