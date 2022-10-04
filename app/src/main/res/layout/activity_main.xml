@@ -15,6 +15,7 @@
         app:layout_constraintStart_toStartOf = "parent"
         app:layout_constraintTop_toTopOf = "parent" />
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -137,4 +138,11 @@
         android:layout_height="wrap_content"
         android:text="SIMULAR"
         android:layout_marginHorizontal="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:text="CONSTITUIR"/>
+
 </LinearLayout>
