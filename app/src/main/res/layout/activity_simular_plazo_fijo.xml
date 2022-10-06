@@ -61,9 +61,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:autoSizeTextType="uniform"
+        android:maxLength="10"
         android:ems="10"
-        android:inputType="number"
-        android:text="69.5" />
+        android:inputType="numberDecimal"
+        android:text="" />
     </LinearLayout>
 
     <LinearLayout
@@ -81,8 +82,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="number"
-        android:text="96.33" />
+        android:maxLength="10"
+        android:inputType="numberDecimal"
+        android:text="" />
     </LinearLayout>
 
     <LinearLayout
@@ -100,14 +102,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="number"
-        android:text="10000" />
+        android:inputType="numberDecimal"
+        android:text="" />
     </LinearLayout>
     <SeekBar
         android:id="@+id/seekBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:max="12" />
+        android:max="12"
+        android:min="1"
+        android:progress="1"
+        />
 
     <TextView
         android:id="@+id/datoSeekBar"
@@ -159,8 +164,8 @@
         android:id="@+id/capitalDato"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="number"
-        android:text="111" />
+        android:inputType="numberDecimal"
+        android:text="" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -176,8 +181,8 @@
         android:id="@+id/interesesDatos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="number"
-        android:text="100" />
+        android:inputType="numberDecimal"
+        android:text="" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -193,8 +198,8 @@
         android:id="@+id/montoDatos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="number"
-        android:text="1000" />
+        android:inputType="numberDecimal"
+        android:text="" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -210,8 +215,8 @@
         android:id="@+id/montoAnualDatos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="number"
-        android:text="1000" />
+        android:inputType="numberDecimal"
+        android:text="" />
     </LinearLayout>
     <RelativeLayout
         android:layout_width="match_parent"
